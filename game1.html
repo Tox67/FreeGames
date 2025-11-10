@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Game 1</title>
+<style>
+    body { font-family: Arial; text-align: center; margin-top: 50px; background: #111; color: #fff; }
+    button { padding: 20px 40px; font-size: 24px; cursor: pointer; }
+</style>
+</head>
+<body>
+    <h1>Click the Button!</h1>
+    <button id="clickMe">0 Clicks</button>
+
+    <script>
+        let count = 0;
+        const btn = document.getElementById('clickMe');
+        btn.onclick = () => {
+            count++;
+            btn.textContent = count + ' Clicks';
+        };
+    </script>
+</body>
+</html>
